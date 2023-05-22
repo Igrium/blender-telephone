@@ -15,6 +15,7 @@
         "typescript": "^5.0.4"
     },
     "scripts": {
-        "dev": "ts-node-dev src/app.ts"
+        "start": "ts-node-dev src/app.ts",
+        "build": "tsc"
     }
 }
