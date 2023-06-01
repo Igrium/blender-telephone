@@ -5,17 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Server",
             "type": "node",
             "request": "launch",
-            "name": "Launch Server",
-            "skipFiles": [
-                "<node_internals>/**"
+            "localRoot": "${workspaceFolder}/server",
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register"
             ],
-            "program": "${workspaceFolder}/server/src/app.ts",
-            "outFiles": [
-                "${workspaceFolder}/**/*.js"
-            ],
-            "cwd": "${workspaceFolder}/server"
+            "args": [
+                "src/app.ts"
+            ]
         }
     ]
 }
